@@ -23,7 +23,7 @@ const LoginMain = () => {
 
             <div className="input-text">
                 <span> Don't have an Account? 
-                <a href="" className="new-account"> Create New Account</a> </span>
+                <a href="/register" className="new-account"> Create New Account</a> </span>
             </div> 
         </div>
     </div>

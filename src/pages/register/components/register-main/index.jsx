@@ -33,7 +33,7 @@ const RegisterMain = () =>{
 
     <div className="input-text">
         <span> Already have an Account? 
-        <a href="" className="old-account"> Login Here</a> </span>
+        <a href="/login" className="old-account"> Login Here</a> </span>
     </div> 
 </div>
     </div>
