@@ -1,0 +1,17 @@
+.app-banner{
+    height: 100vh;
+    width: 40%;;
+    background-color : rgb(169, 220, 217);
+}
+
+.LadySketch{
+    margin-top : 50px;
+}
+
+.heading-main{
+    margin-top: 30px;
+    letter-spacing: 8px;
+    color: black;
+    font-family: 'Lucida Handwriting';
+    font-weight: 900;
+}
