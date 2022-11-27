@@ -1,5 +1,34 @@
 .navbar-component{
-    height: 7vh;
+    height: 6vh;
     width:100%;
     border-bottom: 1px solid #f08080;
+}
+.navbar-list{
+    height: 100%;
+    display: inline-flex;
+    padding: 5px;
+    color:#f08080;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: bold;
+}
+.navbar-list-items{
+    height: 100%;
+    margin: 0px 50px;
+    padding: 7px 5px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: medium;
+}
+.navbar-list-items:hover{
+    color: #f08080;
+}
+/* .navbar-list-items:active{
+    color: #f08080;
+    border-bottom: 2px solid #f08080;
+} */
+.navbar-list-items:focus{
+    color: #f08080;
+    border-bottom: 2px solid #f08080;
 }

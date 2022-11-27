@@ -16,7 +16,7 @@ const LoginMain = () => {
             </div>
 
             <div>
-                <a href="" className="forgot-password">Forgot Password?</a>
+                <a href="#" className="forgot-password">Forgot Password?</a>
             </div>
             
             <button className="sign-in mt-3 mb-4">Sign In</button>
