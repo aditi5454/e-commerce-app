@@ -6,11 +6,11 @@
     width: 60%;
 }
 
-/* .main-heading{
+.main-heading{
     color: black;
     margin-bottom: 25px;
     letter-spacing: 5px ;
- } */
+ }
  
  .old-account:hover{
     color: orange;
@@ -30,27 +30,24 @@
     border-radius: 5px;
     padding: 4px 0;
 }
-/* .input-text{
+.input-text{
     font-weight: 600;
     color: black;
-} */
+}
 
-/* .input-box{
+.input-box{
     width:80%;
+    color: black;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
-    border-color: grey;
     border-bottom-style: double;
-    background-color: #eee;
     border-radius: 5px;
+    color:grey;
+    /* border-color: grey; */
+    /* background-color: #eee; */
 }
 .input-box:focus {
     outline: none;
-  } */
-  .input-box{
-    color:grey;
   }
-/* input[type="date"]::-webkit-datetime-edit {
-    display: none;
-} */
+ 

@@ -57,8 +57,9 @@
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
-    border-color: grey;
+    border-color: black;
     border-bottom-style: double;
+    color: grey;
     /* background-color: #eee; */
     border-radius: 5px;
 }
