@@ -1,5 +1,6 @@
 import React from "react";
 import "./popular-offers.css";
+import { useNavigate } from "react-router-dom";
 import AndPoster from "./../../../../common/assets/images/and-poster.jpg"
 import BootsDiscount from "./../../../../common/assets/images/boots-discount-poster.jpg"
 import DressDiscount from "./../../../../common/assets/images/dresses-discount-poster.jpg"
@@ -10,9 +11,13 @@ import LeviPoster from "./../../../../common/assets/images/levi-poster.jpg"
 import PheetaDiscount from "./../../../../common/assets/images/pheeta-ethnics-discount-poster.jpg"
 import PumaPoster from "./../../../../common/assets/images/puma-poster.jpg"
 import WesternwearDiscount from "./../../../../common/assets/images/wester-wear-discount-poster.jpg"
-import { Button } from "react-bootstrap";
 
 const PopularOffers = () => {
+    const navigate= useNavigate();
+    const goToProductList=()=>{
+        navigate("/product-list");
+    };
+
     return <div className="popular-offers-component">
         <div className="offers-division1">
             <h1 className="offers-heading">Deals Of The Day</h1>
@@ -33,7 +38,7 @@ const PopularOffers = () => {
             <img src={HeelsDiscount} alt="heels " className="posters"></img>
             <img src={BootsDiscount} alt="boots " className="posters"></img>
         </div>
-        <button className="offers-button">DISCOVER ALL</button>
+        <button className="offers-button" onClick={goToProductList}>DISCOVER ALL</button>
     </div>
 }
 

@@ -1,16 +1,53 @@
 .footer-component{
     font-family: 'Lucida Handwriting';
-    height: 300px;
-    background-color: rgb(210, 210, 210);
+    height: 270px;
+    background-color: #d2d2d2;
     color: rgb(102, 101, 101);
     text-transform: uppercase;
+    font-size: small;
 }
 .footer-container{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     padding-top: 40px;
     height: 200px;
 }
-.footer-div1, .footer-div2, .footer-div3, .footer-div4{
-    width: 150px;
+.footer-div1 {
+    width: 450px;
+    padding-left: 70px;
+}
+.footer-div2, .footer-div3{
+    width: 300px;
+}
+.footer-div4{
+    width: fit-content;
+}
+
+.footer-li{
+    list-style-type: none;
+    text-align: left;
+    cursor: pointer;
+}
+.footer-li:hover{
+    color: black;
+}
+.footer-headings {
+    text-align:left;
+    padding-left:30px;
+    font-weight: bold;
+    /* color: black; */
+}
+.footer-info{
+    text-align:left;
+    padding-left:30px;
+}
+.footer-info:hover{
+    color: black;
+}
+
+.footer-logos{
+    padding-left: 25px;
+}
+.logos{
+    margin: 0px 6px;
 }

@@ -37,7 +37,6 @@
 
 .input-box{
     width:80%;
-    color: black;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
@@ -50,4 +49,9 @@
 .input-box:focus {
     outline: none;
   }
+
+.input-box::placeholder{
+    color: grey;
+    opacity: 1;
+}
  

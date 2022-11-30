@@ -1,0 +1,27 @@
+.about-component{
+    background-color: #d2d2d2;
+    font-family: 'Lucida Handwriting';
+    height: 2000px;
+}
+.about-container{
+    width: 70%;
+    height: 2000px;
+    margin: 0px auto;
+    background-color: #f08080;
+    color: #a17575;
+    line-height: 40px;
+    text-indent: 50px;
+    letter-spacing: 2px;
+}
+.about-text{
+    color: white;
+}
+.moto{
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.about-heading{
+    color: #a17575;
+}

@@ -16,11 +16,11 @@ const Header = () => {
 
         <div className="header-top">
             <div className="top-left">
-            <a href="https://www.facebook.com/" target="_blank"><img src={Facebook} alt="facebook-logo" className="logos"></img>
+            <a href="https://www.facebook.com/" ><img src={Facebook} alt="facebook-logo" className="logos"></img>
             </a>
-            <a href="https://www.instagram.com/" target="_blank"><img src={Insta} alt="instagram-logo" className="logos"></img></a>
-            <a href="https://twitter.com/" target="_blank"><img src={Twitter} alt="twitter-logo" className="logos"></img></a>  
-            <a href="https://in.pinterest.com/" target="_blank"><img src={Pinterest} alt="pinterest-logo" className="logos"></img></a>  
+            <a href="https://www.instagram.com/" ><img src={Insta} alt="instagram-logo" className="logos"></img></a>
+            <a href="https://twitter.com/" ><img src={Twitter} alt="twitter-logo" className="logos"></img></a>  
+            <a href="https://in.pinterest.com/" ><img src={Pinterest} alt="pinterest-logo" className="logos"></img></a>  
             </div>
             <div className="top-right">
                 <img src={Search} alt="pinterest-logo" className="logos"></img>
@@ -30,7 +30,7 @@ const Header = () => {
 
         <div className="header-bottom">
             <div className="bottom-left">
-                <img src={ContactLogo} alt="phone-image" className="phone-icon"></img>
+                <img src={ContactLogo} alt="phone" className="phone-icon"></img>
                 <div className="contact-info">
                     <div >Contact Us</div>
                     <div className="phone-no">(123) 456 7890</div>

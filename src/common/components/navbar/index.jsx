@@ -10,7 +10,7 @@ const Navbar=()=>{
     <li><a href="#" className="navbar-list-items" >Dresses</a></li>
     <li><a href="#" className="navbar-list-items" >Ethnic Wear</a></li>
     <li><a href="#" className="navbar-list-items" >Footwear</a></li>
-    <li><a href="#" className="navbar-list-items" >About Us</a></li>
+    <li><a href="/about" className="navbar-list-items" >About Us</a></li>
     </ul>
     </div>
 }
