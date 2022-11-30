@@ -16,10 +16,11 @@ const Header = () => {
 
         <div className="header-top">
             <div className="top-left">
-                <img src={Facebook} alt="facebook-logo" className="logos"></img>
-                <img src={Insta} alt="instagram-logo" className="logos"></img>
-                <img src={Twitter} alt="twitter-logo" className="logos"></img>
-                <img src={Pinterest} alt="pinterest-logo" className="logos"></img>
+            <a href="https://www.facebook.com/" target="_blank"><img src={Facebook} alt="facebook-logo" className="logos"></img>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank"><img src={Insta} alt="instagram-logo" className="logos"></img></a>
+            <a href="https://twitter.com/" target="_blank"><img src={Twitter} alt="twitter-logo" className="logos"></img></a>  
+            <a href="https://in.pinterest.com/" target="_blank"><img src={Pinterest} alt="pinterest-logo" className="logos"></img></a>  
             </div>
             <div className="top-right">
                 <img src={Search} alt="pinterest-logo" className="logos"></img>
