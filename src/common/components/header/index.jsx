@@ -31,8 +31,8 @@ const Header = () => {
             <div className="bottom-left">
                 <img src={ContactLogo} alt="phone-image" className="phone-icon"></img>
                 <div className="contact-info">
-                <div >Contact Us</div>
-                <div className="phone-no">(123) 456 7890</div>
+                    <div >Contact Us</div>
+                    <div className="phone-no">(123) 456 7890</div>
                 </div>
             </div>
 
