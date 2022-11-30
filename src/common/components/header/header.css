@@ -1,7 +1,9 @@
 .header-component{
-    height: 15vh;
+    height: 19vh;
     width:100%;
     border-bottom: 1px solid #f08080;
+    font-family: 'Lucida Handwriting';
+    background-color: #FAFBFC;
 }
 .logos{
     height:25px;
@@ -14,7 +16,7 @@
     background-color:#f08080;
     display: flex;
     justify-content: space-between;
-    padding: 3px 0px;
+    padding: 3px 45px;
 }
 .search-input{
     border-top-style: hidden;
@@ -36,6 +38,7 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
+    padding: 13px 60px;
   }
   .bottom-left{
       display: inline-flex;
@@ -59,6 +62,7 @@
     }
     .bottom-right-logos{
     margin-left:20px;
+    cursor: pointer;
     }
     .phone-no{
         color: black;

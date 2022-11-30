@@ -4,7 +4,7 @@ import Header from "../../common/components/header"
 import Navbar from "../../common/components/navbar"
 import ImageSlider from "./components/image-slider/index"
 import Features from "./components/features/index"
-import PapularOffers from "./components/popular-offers/index"
+import Footer from "../../common/components/footer";
 import PopularOffers from "./components/popular-offers/index";
 
 const Home =() =>{
@@ -14,8 +14,7 @@ const Home =() =>{
     <ImageSlider />
     <Features />
     <PopularOffers />
-    <section className= "common-section payment-means">payments</section>
-    {/* <Footer />*/}
+    <Footer />
     </div>
 }
 

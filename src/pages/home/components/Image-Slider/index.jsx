@@ -8,11 +8,11 @@ import Carousel7 from "./../../../../common/assets/images/carousel-7.webp";
 
 const ImageSlider=()=> {
     const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
+    const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
   return (
+    <div className="image-slider-component">
     <Carousel activeIndex={index} onSelect={handleSelect} >
       <Carousel.Item>
         <img
@@ -36,6 +36,7 @@ const ImageSlider=()=> {
         />
       </Carousel.Item>
     </Carousel>
+    </div>
   );
 }
 

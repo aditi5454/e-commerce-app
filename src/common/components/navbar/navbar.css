@@ -2,6 +2,8 @@
     height: 6vh;
     width:100%;
     border-bottom: 1px solid #f08080;
+    font-family: 'Lucida Handwriting';
+    background-color: #FAFBFC;
 }
 .navbar-list{
     height: 100%;
