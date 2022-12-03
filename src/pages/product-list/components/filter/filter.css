@@ -1,0 +1,38 @@
+.filter-component{
+    padding: 15px;
+    background-color: #FAFBFC;
+    border-radius: 5px;
+}
+.filter-heading{
+    text-align: left;
+    margin:10px 0;
+}
+.brands-filter-top, .price-filter-top{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.view-all-anchor{
+    text-decoration: none;
+    color: #f08080;
+    font-size: large;
+}
+.view-all-anchor:hover{
+    color: rgb(12, 199, 187);
+}
+.brands-filter-bottom{
+    padding: 0px 10px;
+}
+.brand-name-option{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+.brandname-text{
+    padding-left: 4px;
+}
+.price-filter-bottom{
+    text-align: left;
+    font-weight: bold;
+    color: #f08080;
+}

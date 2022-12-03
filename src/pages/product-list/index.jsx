@@ -5,7 +5,8 @@ import Navbar from "./../../common/components/navbar"
 import Footer from "./../../common/components/footer"
 import SingleProduct from "./../../common/components/single-product";
 import { products } from "./../../common/constants/sample_clothes";
-import Pagination from 'react-bootstrap/Pagination';
+import Pagination from "./components/pagination";
+import Filter from "./components/filter";
 
 const ProductList = () => {
     return <div >
@@ -15,30 +16,29 @@ const ProductList = () => {
         <div className="product-list-component" >
 
             <div className="product-list-left">
-                <div className="filter-component">this is filter</div>
+                <Filter />
             </div>
 
             <div className="product-list-right">
+                <div className="product-list-top">
+                    <h4 className="product-list-heading">All Products</h4>
+                    <div className="sort-by">
+                        <span className="sortby-text">Sort by</span>
+                        <select className="select-button">
+                            <option value="low to high">Price- Low to High</option>
+                            <option value="high to low">Price- High to Low</option>
+                            <option value="popularity">Popularity</option>
+                            <option value="ratings">Ratings</option>
+                        </select>
+                    </div>
+                </div>
+
                 <div className="products-component">
                     {
                         products.map(product => <SingleProduct productdata={product} key={product.key} />)
                     }
                 </div>
-                <div className="pagination">
-                    <Pagination>
-                        <Pagination.First />
-                        <Pagination.Prev />
-
-                        <Pagination.Item active>{1}</Pagination.Item>
-                        <Pagination.Item>{2}</Pagination.Item>
-                        <Pagination.Item>{3}</Pagination.Item>
-                        <Pagination.Item>{4}</Pagination.Item>
-                        <Pagination.Item>{5}</Pagination.Item>
-
-                        <Pagination.Next />
-                        <Pagination.Last />
-                    </Pagination>
-                </div>
+                <Pagination />
             </div>
         </div>
 
