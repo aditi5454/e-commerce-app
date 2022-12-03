@@ -7,7 +7,7 @@ import Insta from "../../assets/icons/insta-lightcoral.png"
 import User from "../../assets/icons/user-logo.png"
 import Search from "../../assets/icons/search-lightcoral.png"
 import ShoppingBag from "../../assets/icons/shopping-bag.png"
-import WishlistEmpty from "../../assets/icons/wishlist-empty-logo.png"
+import WishlistEmpty from "../../assets/icons/wishlist-black.png"
 import ContactLogo from "../../assets/icons/contact-logo-black.png"
 
 

@@ -1,0 +1,45 @@
+.single-product-container{
+    height: 370px;
+    width: 276px;
+    position: relative;
+    border: 1px solid black;
+    padding:15px;
+    margin: 10px;
+}
+.product-name{
+    font-size: 12px;
+}
+.product-price-info{
+    display: flex;
+    justify-content: center;
+}
+.original-price{
+    text-decoration: line-through;
+    padding-right: 5px;
+}
+.discount-price{
+    font-weight: bold;
+    padding: 0 5px;
+}
+.discount{
+    color: #f08080;
+}
+.brand-name{
+    font-weight: bold;
+}
+.productlist-product-image{
+    position: relative;
+}
+.wishlist-button{
+    width: 80%;
+    margin-top: 6px;
+    background-color: #f08080;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: white;
+    font-size: small ;
+}
+.wishlist-emptyheart-logo{
+    height: 15px;
+    width: 15px;
+}

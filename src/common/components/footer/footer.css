@@ -1,7 +1,9 @@
 .footer-component{
     font-family: 'Lucida Handwriting';
     height: 270px;
-    background-color: #d2d2d2;
+    /* background-color: #d2d2d2; */
+    /* background-color: #e9e7e7; */
+    background-color: #ede8e8;
     color: rgb(102, 101, 101);
     text-transform: uppercase;
     font-size: small;
@@ -27,6 +29,10 @@
     list-style-type: none;
     text-align: left;
     cursor: pointer;
+}
+.footer-anchor-li{
+    text-decoration: none;
+    color: rgb(102, 101, 101);
 }
 .footer-li:hover{
     color: black;

@@ -1,3 +1,26 @@
 .product-list-component{
-    height: 1000px;
+    height: 3600px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    /* background-color: #84b031; */
+    /* background-color: teal;
+    background-color: #6cc8c7;
+    background-color: #A4DE74; */
+    background-color:rgb(12, 199, 187);
+    font-family: 'Lucida Handwriting';
+}
+.product-list-left{
+    width: 25%;
+    background-color: white;
+}
+.product-list-right{
+    width: 72%;
+    background-color: white;
+    padding: 12px;
+}
+.products-component{
+   display: flex;
+   justify-content: flex-start;
+   flex-wrap: wrap;
 }

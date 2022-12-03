@@ -4,7 +4,7 @@ import "./navbar.css"
 const Navbar=()=>{
     return <div className="navbar-component">
     <ul className="navbar-list">
-    <li><a href="#" className="navbar-list-items" >Home</a></li>
+    <li><a href="/home" className="navbar-list-items" >Home</a></li>
     <li><a href="#" className="navbar-list-items" >Tops</a></li>
     <li><a href="#" className="navbar-list-items" >Bottom</a></li>
     <li><a href="#" className="navbar-list-items" >Dresses</a></li>

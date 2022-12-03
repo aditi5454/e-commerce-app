@@ -27,11 +27,11 @@ const Footer = () => {
                 <h6 className="footer-headings">SKY COLLECTION</h6>
                 <ul>
                 <li className="footer-li" onClick={goToTop}>Home</li>
-                <li className="footer-li">Tops</li>
-                <li className="footer-li">Bottom</li>
-                <li className="footer-li">Dresses</li>
-                <li className="footer-li">Ethnic Wear</li>
-                <li className="footer-li">Footwear</li>
+                <a href="#" className="footer-anchor-li"><li className="footer-li">Tops</li></a>
+                <a href="#" className="footer-anchor-li"><li className="footer-li">Bottom</li></a>
+                <a href="#" className="footer-anchor-li"><li className="footer-li">Dresses</li></a>
+                <a href="#" className="footer-anchor-li"><li className="footer-li">Ethnic Wear</li></a>
+                <a href="#" className="footer-anchor-li"><li className="footer-li">Footwear</li></a>
                 <li className="footer-li" onClick={goToAboutPage}>About Us</li>
                 </ul>
                 
@@ -39,8 +39,8 @@ const Footer = () => {
             <div className="footer-div3">
                 <h6 className="footer-headings">customer service</h6>
                 <ul>
-                <li className="footer-li">my cart</li>
-                <li className="footer-li">shipping</li>
+                <a href="#" className="footer-anchor-li"><li className="footer-li">my cart</li></a>
+                <a href="#" className="footer-anchor-li"><li className="footer-li">shipping</li></a>
                 <li className="footer-li">return policy</li>
                 <li className="footer-li">FAQ</li>
                 <li className="footer-li">contact</li>
