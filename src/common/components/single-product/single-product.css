@@ -5,6 +5,7 @@
     border: 1px solid black;
     padding:15px;
     margin: 10px;
+    cursor: pointer;
 }
 .product-name{
     font-size: 12px;
