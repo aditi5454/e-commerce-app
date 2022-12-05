@@ -5,6 +5,7 @@ import Footer from "./../../common/components/footer";
 import Navbar from "./../../common/components/navbar";
 import BreadCrumbs from "./components/breadcrumbs"; 
 import Share from "./../../common/components/share";
+import ProductDetailSection from "./components/product-detail-section";
 
 const ProductDetails = () => {
     return <div className="product-detail-component">
@@ -16,7 +17,9 @@ const ProductDetails = () => {
             </div>
             <div className="product-detail-bottom">
                 <div className="product-detail-bottom-left">part-1</div>
-                <div className="product-detail-bottom-center">part 2</div>
+                <div className="product-detail-bottom-center">
+                <ProductDetailSection />
+                </div>
                 <div className="product-detail-bottom-right">
                 <Share />
                 </div>

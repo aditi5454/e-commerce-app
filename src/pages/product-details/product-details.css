@@ -1,7 +1,7 @@
 .product-detail-container{
     height: 900px;
     /* background-color: #ede8e8; */
-    background-color:rgb(12, 199, 187);
+    background-color:#0cc6b9;
     padding: 30px 65px;
     font-family: "Lucida Handwriting";
 }
@@ -13,10 +13,11 @@
     padding: 20px;
 }
 .product-detail-bottom-left{
-    width: 40%;
+    width: 32%;
+    background-color: aquamarine;
 }
 .product-detail-bottom-center{
-    width: 50%;
+    width: 58%;
 }
 .product-detail-bottom-right{
     width: 10%;
