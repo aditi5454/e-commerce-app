@@ -49,12 +49,12 @@ const Footer = () => {
             <div className="footer-div4">
                 <h6 className="footer-headings">social</h6>
                 <div className="footer-logos">
-                    <a href="https://www.facebook.com/" ><img src={Facebook} alt="facebook-logo" className="logos"></img>
+                    <a href="https://www.facebook.com/" ><img src={Facebook} alt="facebook-logo" className="footer-logo"></img>
                     </a>
-                    <a href="https://www.instagram.com/" ><img src={Insta} alt="instagram-logo" className="logos"></img></a>
-                    <a href="https://twitter.com/" ><img src={Twitter} alt="twitter-logo" className="logos"></img></a>
-                    <a href="https://in.pinterest.com/" ><img src={Pinterest} alt="pinterest-logo" className="logos"></img></a>
-                    <a href="https://www.youtube.com/" ><img src={YouTube} alt="youtube-logo" className="logos"></img></a>
+                    <a href="https://www.instagram.com/" ><img src={Insta} alt="instagram-logo" className="lofooter-logogos"></img></a>
+                    <a href="https://twitter.com/" ><img src={Twitter} alt="twitter-logo" className="footer-logo"></img></a>
+                    <a href="https://in.pinterest.com/" ><img src={Pinterest} alt="pinterest-logo" className="footer-logo"></img></a>
+                    <a href="https://www.youtube.com/" ><img src={YouTube} alt="youtube-logo" className="footer-logo"></img></a>
                 </div>
             </div>
         </div>

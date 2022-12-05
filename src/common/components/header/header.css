@@ -8,15 +8,14 @@
 .logos{
     height:25px;
     width: 25px;
-    margin-left: 5px;
-    /* cursor: pointer; */
+    margin-right: 4px;
 }
 .header-top{
     height: 35px;
     background-color:#f08080;
     display: flex;
     justify-content: space-between;
-    padding: 3px 45px;
+    padding: 5px 65px;
 }
 .search-input{
     border-top-style: hidden;
@@ -31,14 +30,14 @@
 .search-input:focus {
     outline: none;
   }
-::placeholder{
+  .search-input::placeholder{
     color:white;
   }
   .header-bottom{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 13px 60px;
+    padding: 13px 65px;
   }
   .bottom-left{
       display: inline-flex;
@@ -58,7 +57,7 @@
     .bottom-right{
         display: flex;
         justify-content: space-evenly;
-        margin-right: 35px;
+        /* margin-right: 35px; */
     }
     .bottom-right-logos{
     margin-left:20px;

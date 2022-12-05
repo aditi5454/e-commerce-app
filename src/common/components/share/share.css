@@ -1,0 +1,15 @@
+.share-button{
+    background-color: #FAFBFC;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.share-logo{
+    height: 17px;
+    width: 17px;
+    margin: 3px 5px;
+}
+.share-text{
+    font-weight: bold;
+    margin-right: 7px;
+}
