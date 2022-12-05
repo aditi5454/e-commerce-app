@@ -1,5 +1,5 @@
 .product-detail-container{
-    height: 900px;
+    height: 1000px;
     /* background-color: #ede8e8; */
     background-color:#0cc6b9;
     padding: 30px 65px;
@@ -7,7 +7,7 @@
 }
 .product-detail-bottom{
     background-color: #FAFBFC;
-    height: 750px;
+    height: 850px;
     display: flex;
     justify-content: flex-start;
     padding: 20px;

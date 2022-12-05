@@ -5,6 +5,7 @@ import Return from "./../../../../common/assets/icons/return-blue.png";
 import Truck from "./../../../../common/assets/icons/truck-blue.png";
 import Whitebag from "./../../../../common/assets/icons/white-bag-coral.png";
 import Wishlist from "./../../../../common/assets/icons/wishlist-empty-logo.png";
+import ColorPicker from "./../color-picker";
 
 const ProductDetailSection = () => {
     return <div className="product-details-section">
@@ -22,11 +23,12 @@ const ProductDetailSection = () => {
 
         <div className="color-picker">
             <h5 className="color-heading">Choose Colour</h5>
-            <div className="color-picker-colors" >
-                <div className="color-picker-color"></div>
-                <div className="color-picker-color"></div>
-                <div className="color-picker-color"></div>
-                <div className="color-picker-color"></div>
+            <div className="color-picker-container" >
+                <ColorPicker color="lightblue" />
+                <ColorPicker color="aquamarine" />
+                <ColorPicker color="lightgreen"/>
+                <ColorPicker color="pink"/>
+                <ColorPicker color="coral"/>
             </div>
         </div>
 
