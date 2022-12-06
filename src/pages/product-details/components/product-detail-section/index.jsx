@@ -10,7 +10,7 @@ import ColorPicker from "./../color-picker";
 const ProductDetailSection = () => {
     return <div className="product-details-section">
         <h1 className="product-brandname">SASSAFRAS </h1>
-        <div className="product-name">Women Black Ribbed T-shirt</div>
+        <div className="product-detail-name">Women Black Ribbed T-shirt</div>
         <div className="key-features">
             <h5 className="key-feature-text">key features</h5>
             <ul className="unordered-list">

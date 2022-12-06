@@ -3,9 +3,10 @@
     width:100%;
     border-bottom: 1px solid #f08080;
     font-family: 'Lucida Handwriting';
-    background-color: #FAFBFC;
+    /* background-color: #FAFBFC; */
+    background-color: white;
 }
-.navbar-list{
+/* .navbar-list{
     height: 100%;
     display: inline-flex;
     padding: 5px;
@@ -13,24 +14,27 @@
     text-decoration: none;
     list-style-type: none;
     font-weight: bold;
-}
+} */
 .navbar-list-items{
     height: 100%;
     margin: 0px 50px;
-    padding: 9px 5px;
-    text-decoration: none;
-    color: black;
+    /* padding: 9px 5px; */
+    /* text-decoration: none; */
+    /* color: black; */
     text-transform: uppercase;
     font-size: medium;
+    border-style: none;
+    background-color: white;
+    font-weight: bold;
 }
 .navbar-list-items:hover{
     color: #f08080;
 }
-/* .navbar-list-items:active{
-    color: #f08080;
-    border-bottom: 2px solid #f08080;
-} */
 .navbar-list-items:focus{
     color: #f08080;
-    border-bottom: 2px solid #f08080;
+    border-bottom: 4px solid #f08080;
+}
+.navbar-list-items::-webkit-keygen-select{
+    border-style: none;
+    background-color: white;
 }

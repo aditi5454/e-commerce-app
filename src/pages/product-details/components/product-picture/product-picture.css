@@ -1,0 +1,25 @@
+.product-picture-top{
+    height: 400px;
+    margin: 30px 0 ;
+}
+.product-picture-bottom-box{
+    height:100px;
+    width: 100px;
+    border: 2px solid #0cc6b9;
+    margin: 10px;
+    border-radius: 5px;
+    padding:14px;
+}
+.product-picture-bottom{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.product-picture-thumbnails{
+    height:70px;
+    width: 70px;
+}
+.product-picture-bottom-box:hover{
+    border: 2px solid #f08080;
+}

@@ -5,6 +5,7 @@ import Footer from "./../../common/components/footer";
 import Navbar from "./../../common/components/navbar";
 import BreadCrumbs from "./components/breadcrumbs"; 
 import Share from "./../../common/components/share";
+import ProductPicture from "./components/product-picture";
 import ProductDetailSection from "./components/product-detail-section";
 
 const ProductDetails = () => {
@@ -16,7 +17,9 @@ const ProductDetails = () => {
                 <BreadCrumbs />
             </div>
             <div className="product-detail-bottom">
-                <div className="product-detail-bottom-left">part-1</div>
+                <div className="product-detail-bottom-left">
+                <ProductPicture />
+                </div>
                 <div className="product-detail-bottom-center">
                 <ProductDetailSection />
                 </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./product-list.css"
 import Header from "./../../common/components/header"
 import Navbar from "./../../common/components/navbar"
@@ -7,11 +7,28 @@ import SingleProduct from "./../../common/components/single-product";
 import { products } from "./../../common/constants/sample_clothes";
 import Pagination from "./components/pagination";
 import Filter from "./components/filter";
+import {useEffect} from 'react';
 
 const ProductList = () => {
+    const [productList, setProductList] = useState(products);
+
+    const getProductList = (type) => {
+        if (type===""){
+             setProductList(products);
+        }
+        else{
+        const filteredProducts = products.filter(product => product.type === type);
+        setProductList(filteredProducts);
+        }
+    }
+
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+      }, []);
+      
     return <div >
         <Header />
-        <Navbar />
+        <Navbar getProductList={getProductList}/>
 
         <div className="product-list-component" >
 
@@ -35,7 +52,7 @@ const ProductList = () => {
 
                 <div className="products-component">
                     {
-                        products.map(product => <SingleProduct productdata={product} key={product.key} />)
+                        productList.map(product => <SingleProduct productdata={product} key={product.key} />)
                     }
                 </div>
                 <Pagination />

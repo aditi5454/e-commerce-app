@@ -3,7 +3,8 @@
     width:100%;
     border-bottom: 1px solid #f08080;
     font-family: 'Lucida Handwriting';
-    background-color: #FAFBFC;
+    /* background-color: #FAFBFC; */
+    background-color: white;
 }
 .logos{
     height:25px;
