@@ -1,25 +1,30 @@
 .product-picture-top{
     height: 400px;
-    margin: 30px 0 ;
+    padding-right: 30px;
 }
 .product-picture-bottom-box{
-    height:100px;
-    width: 100px;
+    height:112px;
+    width: 112px;
     border: 2px solid #0cc6b9;
     margin: 10px;
     border-radius: 5px;
-    padding:14px;
+    padding:5px;
 }
 .product-picture-bottom{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    align-items:flex-start;
     flex-wrap: wrap;
+    margin: 20px 0;
 }
 .product-picture-thumbnails{
-    height:70px;
-    width: 70px;
+    height:100px;
+    width: 100px;
 }
 .product-picture-bottom-box:hover{
     border: 2px solid #f08080;
+}
+.main-picture{
+    height: 400px;
+    width: auto;
 }

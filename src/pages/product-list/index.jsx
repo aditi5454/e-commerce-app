@@ -3,22 +3,30 @@ import "./product-list.css"
 import Header from "./../../common/components/header"
 import Navbar from "./../../common/components/navbar"
 import Footer from "./../../common/components/footer"
+import Filter from "./components/filter";
 import SingleProduct from "./../../common/components/single-product";
 import { products } from "./../../common/constants/sample_clothes";
 import Pagination from "./components/pagination";
-import Filter from "./components/filter";
 import {useEffect} from 'react';
+import { useParams } from "react-router-dom";
 
 const ProductList = () => {
-    const [productList, setProductList] = useState(products);
+    const params = useParams();
+    const { productType } = params;
 
-    const getProductList = (type) => {
-        if (type===""){
-             setProductList(products);
+    const [filteredProducts, setFilteredProducts] = useState(products);
+
+    useEffect(()=>{
+        getFilteredProducts(productType);
+    },[productType]);
+
+    const getFilteredProducts =(typeOfProduct) =>{
+        if(typeOfProduct === "all-products"){
+            setFilteredProducts(products);
         }
         else{
-        const filteredProducts = products.filter(product => product.type === type);
-        setProductList(filteredProducts);
+            const FilteredProducts = products.filter(product => product.type === productType);
+            setFilteredProducts(FilteredProducts);
         }
     }
 
@@ -28,7 +36,8 @@ const ProductList = () => {
       
     return <div >
         <Header />
-        <Navbar getProductList={getProductList}/>
+        
+        <Navbar />
 
         <div className="product-list-component" >
 
@@ -51,9 +60,9 @@ const ProductList = () => {
                 </div>
 
                 <div className="products-component">
-                    {
-                        productList.map(product => <SingleProduct productdata={product} key={product.key} />)
-                    }
+                {
+                    filteredProducts.map(product => <SingleProduct productdata={product} key={product.key} />)
+                }
                 </div>
                 <Pagination />
             </div>

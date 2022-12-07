@@ -4,7 +4,6 @@ import WishListEmpty from "./../../assets/icons/wishlist-empty-logo.png";
 import { useNavigate } from "react-router-dom";
 
 const SingleProduct = ({productdata}) => {
-
     const {image, brand, productname, discount_price, original_price, discount,key}  = productdata ;
     
     const navigate= useNavigate();
@@ -30,3 +29,9 @@ const SingleProduct = ({productdata}) => {
 }
 
 export default SingleProduct;
+
+/*
+{
+                    products.map((product,index) => <ProductPicture key={(index+1)}/>)
+                }
+*/

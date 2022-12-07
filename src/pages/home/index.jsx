@@ -10,7 +10,7 @@ import PopularOffers from "./components/popular-offers/index";
 const Home =() =>{
     return <div className="home-page">
     <Header />
-    <div className="navbar-replacement">There Is Something For Everyone...Happy Shopping...</div> 
+    <Navbar />
     <ImageSlider />
     <Features />
     <PopularOffers />

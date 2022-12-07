@@ -12,9 +12,6 @@ const Footer = () => {
     const goToAboutPage=()=>{
         navigate("/about");
     }
-    const goToTop =()=>{
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-    }
 
     return <div className="footer-component">
         <div className="footer-container">
@@ -26,12 +23,13 @@ const Footer = () => {
             <div className="footer-div2">
                 <h6 className="footer-headings">SKY COLLECTION</h6>
                 <ul>
-                <li className="footer-li" onClick={goToTop}>Home</li>
-                <a href="#" className="footer-anchor-li"><li className="footer-li">Tops</li></a>
-                <a href="#" className="footer-anchor-li"><li className="footer-li">Bottom</li></a>
-                <a href="#" className="footer-anchor-li"><li className="footer-li">Dresses</li></a>
-                <a href="#" className="footer-anchor-li"><li className="footer-li">Ethnic Wear</li></a>
-                <a href="#" className="footer-anchor-li"><li className="footer-li">Footwear</li></a>
+                <a href="/home" className="footer-anchor-li"><li className="footer-li">Home</li></a>
+                <a href="/product-list" className="footer-anchor-li"><li className="footer-li">All</li></a>
+                <a href="/product-list" className="footer-anchor-li"><li className="footer-li">Tops</li></a>
+                <a href="/product-list" className="footer-anchor-li"><li className="footer-li">Bottom</li></a>
+                <a href="/product-list" className="footer-anchor-li"><li className="footer-li">Dresses</li></a>
+                <a href="/product-list" className="footer-anchor-li"><li className="footer-li">Ethnic Wear</li></a>
+                <a href="/product-list" className="footer-anchor-li"><li className="footer-li">Footwear</li></a>
                 <li className="footer-li" onClick={goToAboutPage}>About Us</li>
                 </ul>
                 

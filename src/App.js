@@ -23,7 +23,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/product-list" element={<ProductList />} />
+        <Route path="/product-list/:productType" element={<ProductList />} />
         <Route path="/about" element={<About />} />
         <Route path="/product-list/:productName/:productId" element={<ProductDetails />} />
       </Routes>
@@ -32,3 +32,5 @@ function App() {
 }
 
 export default App;
+
+

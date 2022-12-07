@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./product-detail-section.css";
 import CheckBox from "./../../../../common/assets/icons/checkbox-blue.png";
 import Return from "./../../../../common/assets/icons/return-blue.png";
@@ -6,18 +6,30 @@ import Truck from "./../../../../common/assets/icons/truck-blue.png";
 import Whitebag from "./../../../../common/assets/icons/white-bag-coral.png";
 import Wishlist from "./../../../../common/assets/icons/wishlist-empty-logo.png";
 import ColorPicker from "./../color-picker";
+import { product_images } from "./../../../../common/constants/images.js";
 
-const ProductDetailSection = () => {
+const ProductDetailSection = (props) => {
+
+    useEffect(()=>{
+        window.scrollTo({top:0, left: 0, behavior: "smooth"});
+    },[]);
+
+    const {productDetails, productId}= props;
+    const {brand, productname, discount_price, original_price, discount} = productDetails;
+
+    const selectedProductFeatures= product_images.find(product => product.key === parseInt(productId, 10));
+    const {feature_1, feature_2, feature_3, feature_4} = selectedProductFeatures;
+
     return <div className="product-details-section">
-        <h1 className="product-brandname">SASSAFRAS </h1>
-        <div className="product-detail-name">Women Black Ribbed T-shirt</div>
+        <h1 className="product-brandname">{brand} </h1>
+        <div className="product-detail-name">{productname}</div>
         <div className="key-features">
             <h5 className="key-feature-text">key features</h5>
             <ul className="unordered-list">
-                <li>Olive green and black regular top</li>
-                <li>Ethnic motifs print</li>
-                <li>Mandarin collar, three-quarter, roll-up sleeves</li>
-                <li>Woven, Button closure</li>
+                <li>{feature_1}</li>
+                <li>{feature_2}</li>
+                <li>{feature_3}</li>
+                <li>{feature_4}</li>
             </ul>
         </div>
 
@@ -43,9 +55,9 @@ const ProductDetailSection = () => {
         </div>
         <div className="prices-and-taxes">
             <div className="prices-top">
-                <div className="topitem-1">₹599</div>
-                <div className="topitem-2">MRP ₹1499</div>
-                <div className="topitem-3">(60% OFF)</div>
+                <div className="topitem-1">&#x20B9;{discount_price}</div>
+                <div className="topitem-2">&#x20B9;{original_price}</div>
+                <div className="topitem-3">{(discount)}</div>
             </div>
             <div className="prices-bottom">Inclusive of all taxes</div>
         </div>
