@@ -1,0 +1,55 @@
+.order-placed-component{
+    font-family: "Lucida Handwriting";
+}
+.order-placed-top{
+    background-color: #0cc6b9;
+    height: 10vh;
+    padding: 10px 0;
+    padding-left: 50px;
+}
+.order-placed-bottom{
+    height: 90vh;
+    background-color: rgb(243, 239, 239);
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    padding-bottom: 70px;
+}
+.order-placed-left{
+    width: 65%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+.order-placed-right{
+    width: 28%;
+    border-radius: 5px;
+}
+.order-placed-store-heading{
+    text-align: left;
+}
+.order-placed-congratulations-text{
+    font-weight: bold;
+    color: green;
+    font-size: large;
+}
+.order-placed-left-top{
+    text-align: left;
+    padding: 10px 20px;
+}
+.successful-message{
+    margin: 10px 0;
+}
+.continue-shopping{
+    height: 50px;
+    background-color: #f08080;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 250px;
+    letter-spacing: 1px;
+}
+.order-placed-left-bottom{
+    text-align: left;
+}

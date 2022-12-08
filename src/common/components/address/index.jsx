@@ -1,10 +1,10 @@
 import React from "react";
 import "./address.css";
 
-const Address =() =>{
+const Address =({heading}) =>{
     return <div className="address-component">
     <div className="address-component-top">
-    <h6 className="address-top-heading">Address</h6>
+    <h6 className="address-top-heading">{heading}</h6>
     <button className="address-apply-button">Apply</button>
     </div>
     <div className="address-component-bottom">

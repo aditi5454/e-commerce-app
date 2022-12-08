@@ -1,0 +1,55 @@
+.order-failed-component{
+    font-family: "Lucida Handwriting";
+}
+.order-failed-top{
+    background-color: #0cc6b9;
+    height: 10vh;
+    padding: 10px 0;
+    padding-left: 50px;
+}
+.order-failed-bottom{
+    height: 90vh;
+    background-color: rgb(243, 239, 239);
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    padding-bottom: 70px;
+}
+.order-failed-left{
+    width: 65%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+.order-failed-right{
+    width: 28%;
+    border-radius: 5px;
+}
+.order-failed-store-heading{
+    text-align: left;
+}
+.order-failed-text{
+    font-weight: bold;
+    color: red;
+    font-size: large;
+}
+.order-failed-left-top{
+    text-align: left;
+    padding: 20px;
+}
+.failure-message{
+    margin: 10px 0;
+}
+.try-again{
+    height: 50px;
+    background-color: #f08080;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 250px;
+    letter-spacing: 1px;
+}
+.order-failed-left-bottom{
+    text-align: left;
+}

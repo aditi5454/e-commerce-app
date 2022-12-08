@@ -8,8 +8,13 @@ import Wishlist from "./../../../../common/assets/icons/wishlist-empty-logo.png"
 import ColorPicker from "./../color-picker";
 import { product_images } from "./../../../../common/constants/images.js";
 import SelectDropdown from "../../../../common/components/select-dropdown";
+import { useNavigate } from "react-router-dom";
 
 const ProductDetailSection = (props) => {
+    const navigate= useNavigate();
+    const goToCart =() =>{
+        navigate("/cart-page");
+    }
 
     useEffect(()=>{
         window.scrollTo({top:0, left: 0, behavior: "smooth"});
@@ -56,7 +61,7 @@ const ProductDetailSection = (props) => {
             <div className="prices-bottom">Inclusive of all taxes</div>
         </div>
         <div className="product-detail-buttons">
-            <button className="add-to-bag">
+            <button className="add-to-bag" onClick={goToCart}>
                 <img src={Whitebag} alt="white-bag" className="product-detail-button-logo" ></img>
                 <div>ADD TO BAG</div>
             </button>

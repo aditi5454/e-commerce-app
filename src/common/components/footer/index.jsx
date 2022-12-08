@@ -12,7 +12,7 @@ const Footer = () => {
     const goToAboutPage=()=>{
         navigate("/about");
     }
-
+    
     return <div className="footer-component">
         <div className="footer-container">
             <div className="footer-div1">
@@ -37,7 +37,7 @@ const Footer = () => {
             <div className="footer-div3">
                 <h6 className="footer-headings">customer service</h6>
                 <ul>
-                <a href="#" className="footer-anchor-li"><li className="footer-li">my cart</li></a>
+                <a href="/cart-page" className="footer-anchor-li"><li className="footer-li" >my cart</li></a>
                 <a href="#" className="footer-anchor-li"><li className="footer-li">shipping</li></a>
                 <li className="footer-li">return policy</li>
                 <li className="footer-li">FAQ</li>

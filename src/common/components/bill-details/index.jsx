@@ -2,7 +2,8 @@ import React from "react";
 import TaxInfo from "./../../assets/icons/tax-info.png";
 import "./bill-details.css";
 
-const BillDetails = () => {
+const BillDetails = ({ buttonName }) => {
+
     return <div className="bill-details-component">
         <h5 className="bill-details-heading">Bill Details</h5>
         <div className="bill-details-container">
@@ -21,7 +22,11 @@ const BillDetails = () => {
             <div className="total-amount-heading">Total Amount</div>
             <div className="total-amount">&#x20B9;3198.00</div>
         </div>
-        <button className="select-address-button">Select Address</button>
+
+        {
+            buttonName ? <button className="select-address-button" >{buttonName}</button> : <div></div>
+        }
+
     </div>
 }
 

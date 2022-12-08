@@ -38,13 +38,13 @@ const PaymentPage = () => {
             <div className="payment-container-right">
 
                 <div className="payment-container-right-top">
-                    <Address />
+                    <Address heading={"Address"}/>
                 </div>
                 <div className="payment-container-right-center">
                     <ApplyCoupen />
                 </div>
                 <div className="payment-container-right-bottom">
-                    <BillDetails />
+                    <BillDetails buttonName={"Place Order"}/>
                 </div>
             </div>
         </div>

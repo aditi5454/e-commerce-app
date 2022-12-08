@@ -8,10 +8,15 @@ import User from "../../assets/icons/user-logo.png"
 import Search from "../../assets/icons/search-lightcoral.png"
 import ShoppingBag from "../../assets/icons/shopping-bag.png"
 import WishlistEmpty from "../../assets/icons/wishlist-black.png"
-import ContactLogo from "../../assets/icons/contact-logo-black.png"
+import ContactLogo from "../../assets/icons/contact-logo-black.png";
+import { useNavigate } from "react-router-dom";
+
 
 const Header = () => {
-
+    const navigate= useNavigate();
+    const goToCart =() =>{
+        navigate("/cart-page");
+    }
     return <div className="header-component">
 
         <div className="header-top">
@@ -41,7 +46,7 @@ const Header = () => {
 
             <div className="bottom-right">
                 <img src={WishlistEmpty} alt="user-logo" className="logos bottom-right-logos"></img>
-                <img src={ShoppingBag} alt="user-logo" className="logos bottom-right-logos" ></img>
+                <img src={ShoppingBag} alt="user-logo" className="logos bottom-right-logos" onClick={goToCart}></img>
                 <img src={User} alt="user-logo" className="logos bottom-right-logos"></img>
             </div>
 

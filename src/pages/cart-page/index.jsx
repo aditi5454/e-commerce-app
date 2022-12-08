@@ -70,7 +70,7 @@ const CartPage = () => {
                     <ApplyCoupen />
                 </div>
                 <div className="cart-page-container-right-bottom">
-                    <BillDetails />
+                    <BillDetails buttonName={"Select Address"}/>
                 </div>
             </div>
         </div>
