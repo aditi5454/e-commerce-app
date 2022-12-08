@@ -5,6 +5,7 @@ import About from './pages/home/components/about';
 import ProductList from './pages/product-list';
 import ProductDetails from './pages/product-details';
 import CartPage from './pages/cart-page';
+import PaymentPage from './pages/payment';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -27,6 +28,7 @@ function App() {
         <Route path="/product-list/:productType" element={<ProductList />} />
         <Route path="/about" element={<About />} />
         <Route path="/cart-page" element={<CartPage />} />
+        <Route path="/payment" element={<PaymentPage />} />
         <Route path="/product-list/:productName/:productId" element={<ProductDetails />} />
       </Routes>
     </div>

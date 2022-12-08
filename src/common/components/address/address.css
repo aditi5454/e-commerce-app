@@ -1,0 +1,31 @@
+.address-component{
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.address-component-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.address-top-heading{
+    font-weight: bold;
+    color: #0cc6b9;
+}
+.address-apply-button{
+    border-style: none;
+    color: #f08080;
+    background-color: white;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.address-component-bottom{
+    font-size: 14px;
+    text-align: left;
+}
+.address-owner-name{
+    font-weight: bold;
+    font-size: 14px;
+
+}

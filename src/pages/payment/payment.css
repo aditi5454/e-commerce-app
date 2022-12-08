@@ -1,0 +1,61 @@
+.payment-container{
+    height: 85vh;
+    background-color: rgb(243, 239, 239);
+    padding: 30px 70px;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Lucida Handwriting"
+}
+.payment-container-left{
+    width: 65%;
+    background-color: white;
+    height: 94%;
+    border-radius: 5px;
+    padding: 30px 20px;
+}
+.payment-container-right{
+    width: 28%;
+    border-radius: 5px;
+}
+.payment-container-right-center{
+    margin-bottom: 10px;
+}
+.payment-container-left-top{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.payment-page-step-logo{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+.payment-page-steps-heading{
+    color: #0cc6b9;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.payment-page-steps-heading-active{
+    color: #f08080;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.payment-container-payment-heading{
+    text-align: left;
+    font-weight: bold;
+}
+#cash-method{
+    margin-right: 5px ;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+.label-for-cash-method{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 25px;
+    align-items: center;
+}

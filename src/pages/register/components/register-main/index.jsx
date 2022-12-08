@@ -1,7 +1,12 @@
 import React from "react";
 import "./register-main.css"
+import { useNavigate } from "react-router-dom";
 
 const RegisterMain = () =>{
+    const navigate = useNavigate();
+    const goToHome = () =>{
+        navigate("/home");
+    }
     return <div className="register-main">
     <div className="register-container">
 
@@ -35,6 +40,8 @@ const RegisterMain = () =>{
         <span> Already have an Account? 
         <a href="/login" className="old-account"> Login Here</a> </span>
     </div> 
+
+    <button className="page-skip" onClick={goToHome}>Skip</button>
 </div>
     </div>
 }

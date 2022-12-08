@@ -54,4 +54,13 @@
     color: grey;
     opacity: 1;
 }
+
+.page-skip{
+    color: #f08080;
+    margin: 10px 0;
+    font-weight: bold;
+    background-color: white;
+    border-style: none;
+    text-decoration: underline;
+  }
  

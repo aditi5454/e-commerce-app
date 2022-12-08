@@ -1,1 +1,1 @@
-'bootstrap/dist/js/bootstrap.bundle.min';
+cart-page

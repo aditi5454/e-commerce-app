@@ -10,8 +10,8 @@ import ShoppingBag from "../../assets/icons/shopping-bag.png"
 import WishlistEmpty from "../../assets/icons/wishlist-black.png"
 import ContactLogo from "../../assets/icons/contact-logo-black.png"
 
-
 const Header = () => {
+
     return <div className="header-component">
 
         <div className="header-top">
@@ -41,7 +41,7 @@ const Header = () => {
 
             <div className="bottom-right">
                 <img src={WishlistEmpty} alt="user-logo" className="logos bottom-right-logos"></img>
-                <img src={ShoppingBag} alt="user-logo" className="logos bottom-right-logos"></img>
+                <img src={ShoppingBag} alt="user-logo" className="logos bottom-right-logos" ></img>
                 <img src={User} alt="user-logo" className="logos bottom-right-logos"></img>
             </div>
 
