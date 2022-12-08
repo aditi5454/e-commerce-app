@@ -1,0 +1,17 @@
+.product-detail-quantity-label{
+    color: #0cc6b9;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.product-detail-select-dropdown{
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 8%;
+    padding: 0 5px;
+    color: grey;
+    font-weight: bold;
+}
+.product-detail-select-dropdown:focus{
+    outline: none;
+}

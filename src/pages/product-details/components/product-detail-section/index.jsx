@@ -7,6 +7,7 @@ import Whitebag from "./../../../../common/assets/icons/white-bag-coral.png";
 import Wishlist from "./../../../../common/assets/icons/wishlist-empty-logo.png";
 import ColorPicker from "./../color-picker";
 import { product_images } from "./../../../../common/constants/images.js";
+import SelectDropdown from "../../../../common/components/select-dropdown";
 
 const ProductDetailSection = (props) => {
 
@@ -44,15 +45,8 @@ const ProductDetailSection = (props) => {
             </div>
         </div>
 
-        <div className="quantity">
-            <label className="product-detail-quantity-label">Select Qty.</label>
-            <select className="product-detail-select-dropdown">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-            </select>
-        </div>
+        <SelectDropdown />
+
         <div className="prices-and-taxes">
             <div className="prices-top">
                 <div className="topitem-1">&#x20B9;{discount_price}</div>

@@ -66,20 +66,8 @@
     font-size: 16px;
     color: #f08080;
 }
-.product-detail-quantity-label{
-    margin-right: 10px;
-}
-.key-feature-text, .product-detail-quantity-label{
+.key-feature-text{
     color: #0cc6b9;
-    font-weight: bold;
-}
-.product-detail-select-dropdown{
-    border: 2px solid grey;
-    border-radius: 5px;
-    font-size: 20px;
-    width: 8%;
-    padding: 0 5px;
-    color: grey;
     font-weight: bold;
 }
 .product-detail-name{
