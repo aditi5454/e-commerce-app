@@ -1,0 +1,47 @@
+.cart-address-container{
+    height: 85vh;
+    background-color: rgb(243, 239, 239);
+    padding: 30px 70px;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Lucida Handwriting"
+}
+.cart-address-container-left{
+    width: 65%;
+    background-color: white;
+    height: 94%;
+    border-radius: 5px;
+    padding: 30px 20px;
+}
+.cart-address-container-right{
+    width: 28%;
+    border-radius: 5px;
+}
+.cart-address-container-right-top{  
+    margin-bottom: 30px;
+    height: 24%;
+}
+.cart-address-container-right-bottom{  
+    height: 62%;
+}
+.cart-address-container-left-top{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.cart-address-steps-heading-active{
+    color: #f08080;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.cart-address-steps-heading{
+    color: #0cc6b9;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.line-between-steps{
+    color: #0cc6b9;
+    margin-right: 5px;
+}

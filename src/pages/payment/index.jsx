@@ -5,7 +5,7 @@ import CartPageFooter from "./../../common/components/cart-page-footer";
 import ApplyCoupen from "./../../common/components/apply-coupen";
 import BillDetails from "./../../common/components/bill-details";
 import DoneLogo from "./../../common/assets/icons/successful-coral.png";
-import Step3Logo from "./../../common/assets/icons/step3-blue.png";
+import Step3Logo from "./../../common/assets/icons/step-3-coral.png";
 import Address from "./../../common/components/address";
 
 const PaymentPage = () => {

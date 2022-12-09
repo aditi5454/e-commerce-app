@@ -4,7 +4,7 @@ import CartPageTop from "./../../common/components/cart-page-top";
 import CartPageFooter from "./../../common/components/cart-page-footer";
 import ApplyCoupen from "./../../common/components/apply-coupen";
 import BillDetails from "./../../common/components/bill-details";
-import Step1Logo from "./../../common/assets/icons/step1-coral.png";
+import Step1Logo from "./../../common/assets/icons/step-1-coral.png";
 import Step2Logo from "./../../common/assets/icons/step2-blue.png";
 import Step3Logo from "./../../common/assets/icons/step3-blue.png";
 import Heels from "./../../common/assets/images/heels-discount-poster.jpg"

@@ -8,6 +8,7 @@ import CartPage from './pages/cart-page';
 import PaymentPage from './pages/payment';
 import OrderPlaced from './pages/order-placed';
 import OrderFailed from './pages/order-failed';
+import CartAddress from './pages/cart-address';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -33,6 +34,7 @@ function App() {
         <Route path="/payment" element={<PaymentPage />} />
         <Route path="/order-placed" element={<OrderPlaced />} />
         <Route path="/order-failed" element={<OrderFailed />} />
+        <Route path="/cart-address" element={<CartAddress />} />
         <Route path="/product-list/:productName/:productId" element={<ProductDetails />} />
       </Routes>
     </div>
