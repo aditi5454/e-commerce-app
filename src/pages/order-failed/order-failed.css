@@ -19,7 +19,7 @@
     width: 65%;
     background-color: white;
     border-radius: 5px;
-    padding: 20px;
+    padding: 20px 40px;
 }
 .order-failed-right{
     width: 28%;
@@ -35,7 +35,7 @@
 }
 .order-failed-left-top{
     text-align: left;
-    padding: 20px;
+    padding: 20px 0;
 }
 .failure-message{
     margin: 10px 0;
@@ -51,5 +51,7 @@
     letter-spacing: 1px;
 }
 .order-failed-left-bottom{
+    position: absolute;
+    bottom: 120px;
     text-align: left;
 }

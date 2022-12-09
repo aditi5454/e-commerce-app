@@ -8,6 +8,7 @@ import Step1Logo from "./../../common/assets/icons/step1-coral.png";
 import Step2Logo from "./../../common/assets/icons/step2-blue.png";
 import Step3Logo from "./../../common/assets/icons/step3-blue.png";
 import Heels from "./../../common/assets/images/heels-discount-poster.jpg"
+import ProductSelected from "../../common/components/product-selected";
 
 const CartPage = () => {
 
@@ -31,18 +32,13 @@ const CartPage = () => {
 
                 <div className="cart-page-container-left-bottom">
                     <h4 className="cart-page-shopping-cart-heading">Shopping Cart</h4>
-                    
+
                     <div className="cart-products">
-                        <div className="cart-product-picture-box">
-                            <img src={Heels} alt="top" className="dummy-cart-product-image"></img>
-                        </div>
-                        <div className="cart-product-dummy-details">
-                            <div className="dummy-cart-product-name">Bugatti Black Leather Stiletto Heels</div>
-                            <div className="dummy-cart-product-price">&#x20B9;3099</div>
-                            <div className="dummy-cart-product-text">Inclusive of all taxes</div>
+                        <div>
+                            <ProductSelected />
                         </div>
                         <div className="cart-select-dummy-dropdown">
-                        <div><label className="dummy-cart-quantity-text">Qty.</label></div>
+                            <div><label className="dummy-cart-quantity-text">Qty.</label></div>
                             <select className="dummy-cart-select-dropdown">
                                 <option value="1" className="select-quantity-option">1</option>
                                 <option value="2" className="select-quantity-option">2</option>
@@ -51,18 +47,18 @@ const CartPage = () => {
                             </select>
                         </div>
                         <div className="dummy-color-dropdown">
-                        <div className="cart-dummy-color-select-dropdown-text">Color</div>
-                        <select className="cart-dummy-color-select-dropdown">
-                            <option className="select-color-option">lightblue</option>
-                            <option className="select-color-option">aquamarine</option>
-                            <option className="select-color-option">pink</option>
-                            <option className="select-color-option">coral</option>
-                        </select></div>
+                            <div className="cart-dummy-color-select-dropdown-text">Color</div>
+                            <select className="cart-dummy-color-select-dropdown">
+                                <option className="select-color-option">lightblue</option>
+                                <option className="select-color-option">aquamarine</option>
+                                <option className="select-color-option">pink</option>
+                                <option className="select-color-option">coral</option>
+                            </select></div>
                         <div className="remove-button-container"><button className="remove-cart-item">Remove</button></div>
                     </div>
 
                 </div>
-                
+
             </div>
 
             <div className="cart-page-container-right">
@@ -70,11 +66,11 @@ const CartPage = () => {
                     <ApplyCoupen />
                 </div>
                 <div className="cart-page-container-right-bottom">
-                    <BillDetails buttonName={"Select Address"}/>
+                    <BillDetails buttonName={"Select Address"} />
                 </div>
             </div>
         </div>
-    
+
         <div className="cart-page-bottom">
             <CartPageFooter />
         </div>
