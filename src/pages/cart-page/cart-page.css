@@ -110,3 +110,7 @@
 .remove-button-container{
     padding: 33px 0;
 }
+.cart-page-bottom{
+    position: absolute;
+    bottom: 0;
+}

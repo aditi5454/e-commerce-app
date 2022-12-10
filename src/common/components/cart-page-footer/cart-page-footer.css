@@ -1,8 +1,6 @@
 .page-footer{
-    position: absolute;
-    bottom: 0px;
     background-color: #0cc6b9;
-    width: 100%;
+    width: 100vw;
     height: fit-content;
     padding-top: 2px;
 }

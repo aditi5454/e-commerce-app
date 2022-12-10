@@ -3,6 +3,8 @@
     margin-bottom: 10px;
     border-radius: 5px;
     padding: 10px;
+    height: 145px;
+    width: 345px;
 }
 .address-component-top{
     display: flex;
