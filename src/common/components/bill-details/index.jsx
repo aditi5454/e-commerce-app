@@ -1,8 +1,33 @@
-import React from "react";
+import React,{useState} from "react";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import TaxInfo from "./../../assets/icons/tax-info.png";
 import "./bill-details.css";
 
 const BillDetails = ({ buttonName }) => {
+
+    useEffect(()=>{
+        getGoToPage(buttonName);
+    },[buttonName])
+
+    const navigate= useNavigate();
+    const [goToPage, setGoToPage] = useState();
+
+    const getGoToPage =(buttonName) =>{
+        if(buttonName === "Select Address"){
+            setGoToPage("/cart-address");
+        }
+        else if(buttonName ==="Proceed to Payment"){
+            setGoToPage("/payment");
+        }
+        else{
+            setGoToPage("/order-placed");
+        }  
+    }
+
+    const traversePage = () =>{
+        navigate(goToPage);
+    }
 
     return <div className="bill-details-component">
         <h5 className="bill-details-heading">Bill Details</h5>
@@ -24,7 +49,7 @@ const BillDetails = ({ buttonName }) => {
         </div>
 
         {
-            buttonName ? <button className="select-address-button" >{buttonName}</button> : <div></div>
+            buttonName ? <button className="select-address-button" onClick={traversePage} >{buttonName}</button> : <div></div>
         }
 
     </div>

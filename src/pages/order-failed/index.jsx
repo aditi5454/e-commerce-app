@@ -4,8 +4,13 @@ import Address from "./../../common/components/address";
 import BillDetails from "./../../common/components/bill-details";
 import ErrorLogo from "./../../common/assets/icons/error-red.png";
 import ProductSelected from "../../common/components/product-selected";
+import { useNavigate } from "react-router-dom";
 
 const OrderFailed = () => {
+    const navigate  = useNavigate();
+    const goToAll =() =>{
+        navigate("/product-list/all-products");
+    }
     return <div className="order-failed-component">
         <div className="order-failed-top">
             <h1 className="order-failed-store-heading"> SKY COLLECTION</h1>
@@ -25,7 +30,7 @@ const OrderFailed = () => {
                     </div>
                 </div>
                 <div className="order-failed-left-bottom">
-                <button className="try-again">Try Again</button>
+                <button className="try-again" onClick={goToAll}>Try Again</button>
                 </div>
             </div>
 

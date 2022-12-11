@@ -4,8 +4,13 @@ import Address from "./../../common/components/address";
 import BillDetails from "./../../common/components/bill-details";
 import Successful from "./../../common/assets/icons/successful.png";
 import ProductSelected from "./../../common/components/product-selected";
+import { useNavigate } from "react-router-dom";
 
 const OrderPlaced = () => {
+    const navigate  = useNavigate();
+    const goToAll =() =>{
+        navigate("/product-list/all-products");
+    }
     var date = new Date();
     var day = date.getDate();
     var month = date.getMonth();
@@ -36,7 +41,7 @@ const OrderPlaced = () => {
                 </div>
 
                 <div className="order-placed-left-bottom">
-                    <button className="continue-shopping">Continue Shopping</button>
+                    <button className="continue-shopping" onClick = {goToAll}>Continue Shopping</button>
                 </div>
             </div>
             <div className="order-placed-right">
