@@ -29,7 +29,7 @@ const PaymentPage = () => {
                 <div className="payment-container-left-bottom">
                     <h4 className="payment-container-payment-heading">Payment</h4>
                     <label for="cash-method" className="label-for-cash-method">
-                        <input type="checkbox" id="cash-method"></input>
+                        <input type="radio" id="cash-method" name="payment-method"></input>
                         <span className="cash-method-text">Cash on delivery</span>
                     </label>
                 </div>

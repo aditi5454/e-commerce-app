@@ -3,7 +3,8 @@ import "./filter.css"
 import { brandsOptions } from "./../../../../common/constants/products_count";
 import Form from 'react-bootstrap/Form';
 
-const Filter = () => {
+const Filter = ({getFilteredProducts,typeOfProduct}) => {
+
     return <div className="filter-component">
 
         <h4 className="filter-heading">Filters</h4>
@@ -20,7 +21,7 @@ const Filter = () => {
                             <div className="brand-name-option">
                                 <div classname="brandname-option-left">
                                     <label for={brandOption.id}>
-                                        <input type="checkbox" id={brandOption.id}></input>
+                                        <input type="checkbox" name="brandname" id={brandOption.id} onClick={()=>getFilteredProducts(typeOfProduct,brandOption.name)}></input>
                                         <span className="brandname-text">{brandOption.name}</span>
                                     </label>
                                 </div>

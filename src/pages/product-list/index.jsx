@@ -20,12 +20,20 @@ const ProductList = () => {
         getFilteredProducts(productType);
     },[productType]);
 
-    const getFilteredProducts =(typeOfProduct) =>{
+    const getFilteredProducts =(typeOfProduct,brandName) =>{
         if(typeOfProduct === "all-products"){
             setFilteredProducts(products);
         }
         else{
-            const FilteredProducts = products.filter(product => product.type === productType);
+            const FilteredProducts = products.filter(product =>{
+                if(brandName) {
+                 return (product.type === typeOfProduct && product.brand === brandName)
+                }
+                else{
+                    return(product.type === typeOfProduct);
+                }
+            }
+                )
             setFilteredProducts(FilteredProducts);
         }
     }
@@ -42,7 +50,7 @@ const ProductList = () => {
         <div className="product-list-component" >
 
             <div className="product-list-left">
-                <Filter />
+                <Filter getFilteredProducts={getFilteredProducts} typeOfProduct={productType}/>
             </div>
 
             <div className="product-list-right">
