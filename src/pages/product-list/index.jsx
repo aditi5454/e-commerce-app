@@ -6,51 +6,60 @@ import Footer from "./../../common/components/footer"
 import Filter from "./components/filter";
 import SingleProduct from "./../../common/components/single-product";
 import { products } from "./../../common/constants/sample_clothes";
-import Pagination from "./components/pagination";
-import {useEffect} from 'react';
+import { useEffect } from 'react';
 import { useParams } from "react-router-dom";
+import { Pagination } from "@mui/material";
 
 const ProductList = () => {
     const params = useParams();
     const { productType } = params;
-
+    
     const [filteredProducts, setFilteredProducts] = useState(products);
+    const [currentPage, setCurrentPage] = useState(1);
+    const productPerPage = 6;
+    const indexOfLastProduct = currentPage * productPerPage;
+    const indexOfFirstProduct = indexOfLastProduct - productPerPage;
+    const currentProducts = filteredProducts.slice(indexOfFirstProduct, indexOfLastProduct);
+    const paginate = (e, value) => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        setCurrentPage(value);
+    }
 
-    useEffect(()=>{
+    useEffect(() => {
         getFilteredProducts(productType);
-    },[productType]);
+    }, [productType]);
 
-    const getFilteredProducts =(typeOfProduct,brandName) =>{
-        if(typeOfProduct === "all-products"){
+    const getFilteredProducts = (typeOfProduct, brandName) => {
+        if (typeOfProduct === "all-products") {
             setFilteredProducts(products);
         }
-        else{
-            const FilteredProducts = products.filter(product =>{
-                if(brandName) {
-                 return (product.type === typeOfProduct && product.brand === brandName)
+        else {
+            const FilteredProducts = products.filter(product => {
+                if (brandName) {
+                    return (product.type === typeOfProduct && product.brand === brandName)
                 }
-                else{
-                    return(product.type === typeOfProduct);
+                else {
+                    return (product.type === typeOfProduct);
                 }
             }
-                )
+            )
             setFilteredProducts(FilteredProducts);
         }
     }
 
     useEffect(() => {
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-      }, []);
-      
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, []);
+
     return <div >
         <Header />
-        
+
         <Navbar />
 
         <div className="product-list-component" >
 
             <div className="product-list-left">
-                <Filter getFilteredProducts={getFilteredProducts} typeOfProduct={productType}/>
+                <Filter getFilteredProducts={getFilteredProducts} typeOfProduct={productType} />
             </div>
 
             <div className="product-list-right">
@@ -68,11 +77,14 @@ const ProductList = () => {
                 </div>
 
                 <div className="products-component">
-                {
-                    filteredProducts.map(product => <SingleProduct productdata={product} key={product.key} />)
-                }
+                    {
+                        currentProducts.map(product => <SingleProduct productdata={product} key={product.key} />)
+                    }
                 </div>
-                <Pagination />
+                <Pagination defaultPage={1} page={currentPage} className="pagination"
+                    shape="rounded" size="large" onChange={paginate}
+                    count={Math.ceil(filteredProducts.length / productPerPage)}
+                />
             </div>
         </div>
 
@@ -81,4 +93,3 @@ const ProductList = () => {
 }
 
 export default ProductList;
-

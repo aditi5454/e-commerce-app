@@ -1,5 +1,4 @@
 .product-list-component{
-    height: 3600px;
     display: flex;
     justify-content: space-between;
     padding: 40px;
@@ -30,4 +29,7 @@
 }
 .sortby-text{
     padding-right: 8px;
+}
+.pagination{
+    margin: 10px 0;
 }
