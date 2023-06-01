@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/e-commerce-app/static/css/main.d3771592.css",
+    "main.js": "/e-commerce-app/static/js/main.fd894efa.js",
+    "static/js/787.46493d11.chunk.js": "/e-commerce-app/static/js/787.46493d11.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/e-commerce-app/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
+    "static/media/bootstrap-icons.woff2?": "/e-commerce-app/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
+    "static/media/carousel-4.webp": "/e-commerce-app/static/media/carousel-4.4cd9bb6389289fbc4ec7.webp",
+    "static/media/payment-icons.svg": "/e-commerce-app/static/media/payment-icons.faa89cc8c2473beee15afd66d7481e8c.svg",
+    "static/media/carousel-5.webp": "/e-commerce-app/static/media/carousel-5.1f23984dc9251f341a22.webp",
+    "static/media/carousel-7.webp": "/e-commerce-app/static/media/carousel-7.20b23e4a3fa1f88bd1bd.webp",
+    "static/media/banner-image.jpg": "/e-commerce-app/static/media/banner-image.61f7a63b0bb1f549a4f8.jpg",
+    "static/media/pheeta-ethnics-discount-poster.jpg": "/e-commerce-app/static/media/pheeta-ethnics-discount-poster.fc1e0c143a82b7e11ede.jpg",
+    "static/media/and-poster.jpg": "/e-commerce-app/static/media/and-poster.2f98d36d369e8d41f48a.jpg",
+    "static/media/forever21-poster.jpg": "/e-commerce-app/static/media/forever21-poster.ae4a66566a953c8ab0ab.jpg",
+    "static/media/levi-poster.jpg": "/e-commerce-app/static/media/levi-poster.1e48aa8e15544a4ec2bd.jpg",
+    "static/media/puma-poster.jpg": "/e-commerce-app/static/media/puma-poster.6b40b91518335392a1b3.jpg",
+    "static/media/dresses-discount-poster.jpg": "/e-commerce-app/static/media/dresses-discount-poster.b42bdbf405320fb18030.jpg",
+    "static/media/boots-discount-poster.jpg": "/e-commerce-app/static/media/boots-discount-poster.fc62575988b9f9ebb8f4.jpg",
+    "static/media/ethnic-wear-discount-poster.jpg": "/e-commerce-app/static/media/ethnic-wear-discount-poster.af9bedc61a82091f9695.jpg",
+    "static/media/wester-wear-discount-poster.jpg": "/e-commerce-app/static/media/wester-wear-discount-poster.6fc7c5bb742e0cf59e67.jpg",
+    "static/media/heels-discount-poster.jpg": "/e-commerce-app/static/media/heels-discount-poster.419442e612644f5561f1.jpg",
+    "static/media/secure-pay-icon.svg": "/e-commerce-app/static/media/secure-pay-icon.2be7e1870812b8ea9f20172cba9eaf8d.svg",
+    "index.html": "/e-commerce-app/index.html",
+    "main.d3771592.css.map": "/e-commerce-app/static/css/main.d3771592.css.map",
+    "main.fd894efa.js.map": "/e-commerce-app/static/js/main.fd894efa.js.map",
+    "787.46493d11.chunk.js.map": "/e-commerce-app/static/js/787.46493d11.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3771592.css",
+    "static/js/main.fd894efa.js"
+  ]
+}
