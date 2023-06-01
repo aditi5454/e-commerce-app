@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./header.css"
 import Facebook from "../../assets/icons/facebook-lightcoral.png"
 import Twitter from "../../assets/icons/twitter-lightcoral.png"
@@ -12,10 +12,17 @@ import ContactLogo from "../../assets/icons/contact-logo-black.png";
 import { useNavigate } from "react-router-dom";
 
 
-const Header = () => {
+const Header = ({getFilteredProducts}) => {
+    const [search, setSearch] = useState(""); 
     const navigate= useNavigate();
     const goToCart =() =>{
         navigate("/cart-page");
+    }
+    const handleSearch = () =>{
+        if(search){
+            navigate(`/product-list/${search}`);
+            getFilteredProducts(search);
+        }
     }
     return <div className="header-component">
 
@@ -28,8 +35,9 @@ const Header = () => {
             <a href="https://in.pinterest.com/" ><img src={Pinterest} alt="pinterest-logo" className="logos"></img></a>  
             </div>
             <div className="top-right">
-                <img src={Search} alt="pinterest-logo" className="logos"></img>
-                <input type="text" placeholder="Enter item name here" className="search-input"></input>
+                <img src={Search} alt="pinterest-logo" className="logos" onClick={handleSearch}></img>
+                <input type="text" placeholder="Enter item name here" className="search-input" value={search} 
+                onChange={(e)=> setSearch(e.target.value.toLowerCase())}></input>
             </div>
         </div>
 

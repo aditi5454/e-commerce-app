@@ -13,7 +13,6 @@ import { Pagination } from "@mui/material";
 const ProductList = () => {
     const params = useParams();
     const { productType } = params;
-    
     const [filteredProducts, setFilteredProducts] = useState(products);
     const [currentPage, setCurrentPage] = useState(1);
     const productPerPage = 6;
@@ -29,17 +28,18 @@ const ProductList = () => {
         getFilteredProducts(productType);
     }, [productType]);
 
-    const getFilteredProducts = (typeOfProduct, brandName) => {
+    const getFilteredProducts = (typeOfProduct) => {
         if (typeOfProduct === "all-products") {
             setFilteredProducts(products);
         }
         else {
             const FilteredProducts = products.filter(product => {
-                if (brandName) {
-                    return (product.type === typeOfProduct && product.brand === brandName)
+               
+                if(typeOfProduct){
+                    return (product.type === typeOfProduct || product.brand === typeOfProduct)
                 }
-                else {
-                    return (product.type === typeOfProduct);
+                else{
+                    return (product.productname.toLowerCase().includes(typeOfProduct.toLowerCase()) || product.type.toLowerCase().includes(typeOfProduct.toLowerCase()));
                 }
             }
             )
@@ -52,7 +52,7 @@ const ProductList = () => {
     }, []);
 
     return <div >
-        <Header />
+        <Header getFilteredProducts={getFilteredProducts} />
 
         <Navbar />
 
@@ -93,3 +93,15 @@ const ProductList = () => {
 }
 
 export default ProductList;
+
+
+{/*
+
+ if (brandName) {
+                    return (product.type === typeOfProduct && product.brand === brandName)
+                }
+                else if(typeOfProduct){
+                    return (product.type === typeOfProduct );
+                }
+
+*/}
