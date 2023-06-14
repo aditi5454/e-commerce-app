@@ -1,6 +1,7 @@
 {
   "name": "e_commerce",
   "version": "0.1.0",
+  "homepage": "https://aditi5454.github.io/<repository-name>",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -44,6 +45,7 @@
     ]
   },
   "devDependencies": {
-    "@types/bootstrap": "^5.2.6"
+    "@types/bootstrap": "^5.2.6",
+    "gh-pages": "^5.0.0"
   }
 }
