@@ -37,12 +37,12 @@
 .footer-li:hover{
     color: black;
 }
-.footer-headings {
+/* .footer-headings {
     text-align:left;
     padding-left:30px;
     font-weight: bold;
     /* color: black; */
-}
+/* } */ */
 .footer-info{
     text-align:left;
     padding-left:30px;
