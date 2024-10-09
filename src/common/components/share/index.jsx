@@ -1,14 +1,19 @@
 import React from "react";
-import "./share.css";
-import ShareLogo from "./../../assets/icons/share-logo.png"
+import ShareLogo from "./../../assets/icons/share-logo.png";
 
 const Share = () => {
-    return <div className="share-component">
-    <button className="share-button">
-    <img src={ShareLogo} alt="share-icon" className="share-logo"></img>
-    <div className="share-text">Share</div>
-    </button>
+  return (
+    <div>
+      <button className="bg-[#FAFBFC] rounded-md flex justify-around items-center">
+        <img
+          src={ShareLogo}
+          alt="share-icon"
+          className="h-4 w-4 my-[3px] mx-[5px] "
+        ></img>
+        <div className="font-bold mr-2">Share</div>
+      </button>
     </div>
-}
+  );
+};
 
 export default Share;

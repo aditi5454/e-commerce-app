@@ -1,5 +1,4 @@
 import React,{ useState } from "react";
-import "./image-slider.css"
 import Carousel from 'react-bootstrap/Carousel';
 
 import Carousel4 from "./../../../../common/assets/images/carousel-4.webp";
@@ -12,7 +11,7 @@ const ImageSlider=()=> {
     setIndex(selectedIndex);
   };
   return (
-    <div className="image-slider-component">
+    <div className="p-12 bg-[#FAFBFC]">
     <Carousel activeIndex={index} onSelect={handleSelect} >
       <Carousel.Item>
         <img

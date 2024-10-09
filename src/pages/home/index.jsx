@@ -1,5 +1,4 @@
 import React from "react";
-import "./home.css"
 import Header from "../../common/components/header"
 import Navbar from "../../common/components/navbar"
 import ImageSlider from "./components/Image-Slider/index"
@@ -8,7 +7,7 @@ import Footer from "../../common/components/footer";
 import PopularOffers from "./components/popular-offers/index";
 
 const Home =() =>{
-    return <div className="home-page">
+    return <div>
     <Header />
     <Navbar />
     <ImageSlider />
