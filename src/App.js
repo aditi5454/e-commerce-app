@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="h-screen w-full">
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/" element={<Login />} />
