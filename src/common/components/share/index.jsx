@@ -3,7 +3,7 @@ import ShareLogo from "./../../assets/icons/share-logo.png";
 
 const Share = () => {
   return (
-    <div>
+    <div className="flex justify-end mx-5">
       <button className="bg-[#FAFBFC] rounded-md flex justify-around items-center">
         <img
           src={ShareLogo}
