@@ -109,15 +109,3 @@ const ProductList = () => {
 
 export default ProductList;
 
-{
-  /*
-
- if (brandName) {
-                    return (product.type === typeOfProduct && product.brand === brandName)
-                }
-                else if(typeOfProduct){
-                    return (product.type === typeOfProduct );
-                }
-
-*/
-}

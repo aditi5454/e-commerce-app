@@ -1,58 +1,62 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import TaxInfo from "./../../assets/icons/tax-info.png";
-import "./bill-details.css";
 
 const BillDetails = ({ buttonName }) => {
+  useEffect(() => {
+    getGoToPage(buttonName);
+  }, [buttonName]);
 
-    useEffect(()=>{
-        getGoToPage(buttonName);
-    },[buttonName])
+  const navigate = useNavigate();
+  const [goToPage, setGoToPage] = useState();
 
-    const navigate= useNavigate();
-    const [goToPage, setGoToPage] = useState();
-
-    const getGoToPage =(buttonName) =>{
-        if(buttonName === "Select Address"){
-            setGoToPage("/cart-address");
-        }
-        else if(buttonName ==="Proceed to Payment"){
-            setGoToPage("/payment");
-        }
-        else{
-            setGoToPage("/order-placed");
-        }  
+  const getGoToPage = (buttonName) => {
+    if (buttonName === "Select Address") {
+      setGoToPage("/cart-address");
+    } else if (buttonName === "Proceed to Payment") {
+      setGoToPage("/payment");
+    } else {
+      setGoToPage("/order-placed");
     }
+  };
 
-    const traversePage = () =>{
-        navigate(goToPage);
-    }
+  const traversePage = () => {
+    navigate(goToPage);
+  };
 
-    return <div className="bill-details-component">
-        <h5 className="bill-details-heading">Bill Details</h5>
-        <div className="bill-details-container">
-            <div className="bill-amount-heading">Item Total</div>
-            <div className="bill-amount">&#x20B9;3099.00</div>
+  return (
+    <div className="bg-white rounded-md p-5 w-[345px]">
+      <h5 className="font-bold mb-4">Bill Details</h5>
+      <div className="flex items-center justify-between my-1">
+        <div>Item Total</div>
+        <div>&#x20B9;3099.00</div>
+      </div>
+      <div className="flex items-center justify-between my-1 border-b-[1px] border-dashed pb-3 border-[#0cc6b9]">
+        <div className="flex items-center justify-start">
+          <div className="text-[#0cc6b9]">Tax & Charges</div>
+          <img src={TaxInfo} alt="info" className="h-5 w-5 ml-1"></img>
         </div>
-        <div className="bill-details-container">
-            <div className="tax-heading-and-logo">
-                <div className="taxes-amount-heading">Tax & Charges</div>
-                <img src={TaxInfo} alt="info" className="tax-info-logo"></img>
-            </div>
-            <div className="taxes-amount">&#x20B9;99.00</div>
-        </div>
-        <span className="dotted-line">---------------------------------------</span>
-        <div className="bill-details-container">
-            <div className="total-amount-heading">Total Amount</div>
-            <div className="total-amount">&#x20B9;3198.00</div>
-        </div>
+        <div className="text-[#0cc6b9]">&#x20B9;99.00</div>
+      </div>
 
-        {
-            buttonName ? <button className="select-address-button" onClick={traversePage} >{buttonName}</button> : <div></div>
-        }
+      <div className="flex items-center justify-between my-3">
+        <div>Total Amount</div>
+        <div>&#x20B9;3198.00</div>
+      </div>
 
+      {buttonName ? (
+        <button
+          className="h-10 w-full my-2 bg-[#0cc6b9] text-white font-bold rounded-md uppercase"
+          onClick={traversePage}
+        >
+          {buttonName}
+        </button>
+      ) : (
+        <div></div>
+      )}
     </div>
-}
+  );
+};
 
 export default BillDetails;
